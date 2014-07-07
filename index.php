@@ -1,7 +1,8 @@
 <?php
 require 'bootstrap.php';
 
-$soldier = new Plastic\BattleLog\Soldier();
-$soldier->setName('plastic-pg');
+use Plastic\BattleLog\Soldier as Soldier;
 
-echo $soldier->getName();
+$soldier = new Soldier();
+$soldier->setName('plastic-pg');
+echo $soldier->requestSoldier($soldier->getName());

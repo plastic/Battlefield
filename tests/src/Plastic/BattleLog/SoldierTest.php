@@ -32,4 +32,20 @@ class SoldierTest extends \PHPUnit_Framework_TestCase
 	{
 		$this->Soldier->setName(array());
 	}
+	
+	/**
+	 * @expectedException Exception
+	 * @expectedExceptionMessage Soldier not found
+	 */
+	public function testExceptionApiRequest()
+	{
+		$this->Soldier->setName('abc');
+		$this->Soldier->requestSoldier($this->Soldier->getName());
+	}
+	
+	public function testApiRequest()
+	{
+		$this->Soldier->setName('plastic-pg');
+		$this->assertEquals($this->Soldier->requestSoldier($this->Soldier->getName()), 'plastic-pg');
+	}
 }

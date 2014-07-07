@@ -1,0 +1,4 @@
+formatter.name: pretty
+suites:
+    todo_suite:
+        namespace: Plastic\BattleLog
