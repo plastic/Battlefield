@@ -22,8 +22,8 @@ class Soldier
 		return $this->name;
 	}
 
-    public function requestSoldier($soldier)
-    {
+	public function requestSoldier($soldier)
+	{
 		$log = new Request("http://api.bf4stats.com/api/playerInfo?plat=ps3&name={$soldier}&output=json&opt=names,stats");
 		
 		if (!$log) {
@@ -37,5 +37,5 @@ class Soldier
 		}
 		
 		return $this->soldier['player']['name'];
-    }
+	}
 }

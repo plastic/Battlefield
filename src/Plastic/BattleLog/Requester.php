@@ -46,7 +46,7 @@ class Requester
 
 	public function __destruct()
 	{
-	    $this->close();
+		$this->close();
 	}
 	
 	public function getResult()
