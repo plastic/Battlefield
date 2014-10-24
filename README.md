@@ -1,6 +1,7 @@
-composer isntall
+composer install
 ./vendor/bin/phpunit tests
 
+[ ![Codeship Status for plastic/Battlefield](https://www.codeship.io/projects/905cdb70-3de1-0132-fdd8-6e54d51622ab/status)](https://www.codeship.io/projects/43409)
 
 TODO
 
